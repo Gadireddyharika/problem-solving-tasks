@@ -7,29 +7,24 @@
 </head>
 <body>
     <script>
-        // task1
-    //     function countEvenNumbers(start, end) {
-    //     let count=0;
 
-    //     for (let i=0; i<=10; i++){
-    //         if (i%2===0) {
-    //             count++;
-               
-    //         }
-            
-    //     }
-    //     return count;
-    //     let start=0;
-    //     let end=
-      
-    // }
-    
+// Task1:given two numbers return the  count of even numbers between them
+// input: 0,10  count=5
+let num1=+prompt("enter first number");
+let num2=+prompt("enter second number");
+count=0
+for(i=0; i<=num2; i++){
+    if(i%2==0){
+        console.log(i);
+        count++;
+        
+    }
+}
+console.log("the count of even number is",count);
 
-
-            
-       // task2
-
-       let num=5
+//Task2:given a number print 20 multiples of that number in table format
+// 5 X 1 = 5..........5 X 20 = 100
+        let num=5
         for(i=1; i<=20; i++){
             console.log(num*i)
             

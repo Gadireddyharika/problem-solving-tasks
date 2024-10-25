@@ -8,19 +8,38 @@
 <body>
     <script>
 ///Task:1 Given a string convert all the lowercase characters into upperase and vice versa
- let str1="PROgramme"
- lower=""
- upper=""
- for(i of str1){
-    if(i!==""){
-        if(i==i.toUpperCase()){
-            lower+=i
-        }else{
-            upper+=i
-        }
-    }
- }
- console.log(lower+upper);
+str1="PROgramme"
+res=""
+for(i in str1){
+    if(i%2!==0){
+    console.log(str1[i].toLowerCase());
+}else{
+    res+=str1[i]
+    console.log(str1[i]);
+    
+}
+}
+    
+
+console.log(res);
+
+
+
+
+
+//  let str1="PROgramme"
+//  lower=""
+//  upper=""
+//  for(i of str1){
+//     if(i!==""){
+//         if(i==i.toUpperCase()){
+//             lower+=i
+//         }else{
+//             upper+=i
+//         }
+//     }
+//  }
+//  console.log(lower+upper);
 
  //Task2:write the logic to implement the trim end method
     let str2="   hello world  "
@@ -37,14 +56,7 @@
         }
         console.log(trim_end);
         
-   
-
-
-
-
-
-
-// //Task3: given a string move all the uppercase characters to the front and lowercase character to last
+        // //Task3: given a string move all the uppercase characters to the front and lowercase character to last
 // input ="JscrAViptA"
 // output= "JAVAscript"
    let str="JscrAViptA"
