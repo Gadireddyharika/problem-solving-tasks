@@ -9,6 +9,29 @@
     <script>
 //task1:take a string and return the count of vowels and consonants in it
 
+function countVowelsAndConsonants(str) {
+  let vowels = "aeiouAEIOU";
+  let vowelCount = 0;
+  let consonantCount = 0;
+
+  for (let char of str) {
+    if (/[a-zA-Z]/.test(char)) {  // Checks if character is a letter
+      if (vowels.includes(char)) {
+        vowelCount++;
+      } else {
+        consonantCount++;
+      }
+    }
+  }
+
+  return { vowels: vowelCount, consonants: consonantCount };
+}
+
+// Example usage:
+let result = countVowelsAndConsonants("Hello World");
+console.log(result); // { vowels: 3, consonants: 7 }
+
+
 
 
 
