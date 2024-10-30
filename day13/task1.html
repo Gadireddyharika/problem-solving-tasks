@@ -8,7 +8,7 @@
 <body>
     <script>
  ///Task:1 Given a string convert all the lowercase characters into upperase and vice versa
- let result = "Hello WORLD!";
+ let str0 = swapCase("hello WORLD!");
  function swapCase(str) {
   let swapped = '';
   for (let i = 0; i < str.length; i++) {
@@ -21,68 +21,7 @@
   }
   return swapped;
 }
-
-
-console.log(result); // Output: hELLO wORLD!
-
-
-
-
-
-     //      function swapCase(str) {
-//   let swapped = '';
-//   for (let i = 0; i < str.length; i++) {
-//     let char = str[i];
-//     if (char === char.toLowerCase()) {
-//       swapped += char.toUpperCase();
-//     } else {
-//       swapped += char.toLowerCase();
-//     }
-//   }
-//   return swapped;
-// }
-
-// // Example usage:
-// let result = swapCase("Hello World!");
-// console.log(result); // Output: hELLO wORLD!
-  
-
-
-
-
-
-
- //Task2:write the logic to implement the trim end method
-    let str1="   hello world  "
-    trim_end=""
-    count=0
-    for(i of str1){
-        if(i==""&&count==0){
-        }
-            else{
-                trim_end+=i
-                count++
-
-            }
-        }
-        console.log(trim_end);
-        
-    // //Task3: given a string move all the uppercase characters to the front and lowercase character to last
-    // input ="JscrAViptA"
-     // output= "JAVAscript"
-   let str2="JscrAViptA"
-   upper=""
-   lower=""
-   for(i of str2){
-    if(i==i.toUpperCase()){
-            upper+=i
-        }
-        else{
-            lower+=i
-        }
-    }
-  
-   console.log(upper+lower);
+console.log(str0); 
 </script>
 </body>
 </html>

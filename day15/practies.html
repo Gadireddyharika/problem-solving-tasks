@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[99,1,2,3,4,1,4,1,2,3,6,2,5,100]
+        max=arr[0]
+        sec_max=arr[1]
+        for(i of arr){
+            if(i>max){
+                sec_max=max
+                max=i
+            }
+        
+        if(i<max&&i>sec_max){
+            sec_max=i
+        }
+    }
+    console.log(sec_max);
+
+    
+    
+
+
+
+    </script>
+    
+</body>
+</html>

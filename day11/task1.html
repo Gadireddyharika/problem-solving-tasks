@@ -23,24 +23,6 @@
    return product;
 }
 console.log(diagonalProduct(matrix));
-    
-// // 2.Find the sum of right diagonal elements -->
-
-let matrix1=[[1,2,3],[4,5,6],[7,8,9]]
-function sumRightDiagonal(matrix) {
-  let sum = 0;
-  let n = matrix.length; 
-
-  for (let i = 0; i < n; i++) {
-    sum += matrix[i][n - 1 - i];
-  }
-
-  return sum;
-}
-
-console.log("Sum of right diagonal elements:", sumRightDiagonal(matrix)); 
 </script>
-
-    
 </body>
 </html>
