@@ -8,12 +8,25 @@
 <body>
     <script>
 //take2: a string and return the count of uppercase and lower case characters in it
+const str = countCaseCharacters("Hello World!");
+function countCaseCharacters(str) {
+    let upperCaseCount = 0;
+    let lowerCaseCount = 0;
 
+    for (let char of str) {
+        if (char >= 'A' && char <= 'Z') {
+            upperCaseCount++;
+        } else if (char >= 'a' && char <= 'z') {
+            lowerCaseCount++;
+        }
+    }
 
- 
-
-
-    </script>
-    
+    return {
+        upperCaseCount,
+        lowerCaseCount
+    };
+}
+console.log(str); 
+</script>
 </body>
 </html>
