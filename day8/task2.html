@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    <!-- // TASK2:2.Find sum of maximum and minimum values in array -->
+    function sumOfMaxAndMin(arr) {
+    if (arr.length === 0) {
+        return 0; 
+    }
+    
+    const max = Math.max(...arr); 
+    const min = Math.min(...arr); 
+    
+    return max + min; 
+}
+console.log(sumOfMaxAndMin([3, 5, 1, 8, 2])); 
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Task3. find the length of the number in a function
+let num=123456789;
+function findLengthOfNumber(num){
+    let length=0;
+    while (num!=0){
+        num=Math.floor(num/10);
+        length++;
+
+    }
+    return length;
+}
+console.log("tha length of the number is:", findLengthOfNumber(num));
+
+    </script>
+    
+</body>
+</html>

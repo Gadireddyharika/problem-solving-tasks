@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- // TASK3:3.Print the duplicate values in array -->
+     <script>
+        let arr2=[1,2,2,3,4,4,5,7,7,1]
+        let result=arr2.filter((val,index,self)=>{
+            return self.indexOf(val) !==index;
+
+
+        })
+        console.log(arr2);
+        console.log(result);
+    </script>
+
+    
+</body>
+</html>

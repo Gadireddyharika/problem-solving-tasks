@@ -6,67 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-
 <script>
-
-
 // Task1: write a Armstrong number in a arrow function
 
-
-
-
-// 2. write LCM in a named function
-
-// Task3. find the length of the number in a function
-let num=123456789;
-function findLengthOfNumber(num){
-    let length=0;
-    while (num!=0){
-        num=Math.floor(num/10);
-        length++;
-
-    }
-    return length;
-}
-console.log("tha length of the number is:", findLengthOfNumber(num));
-
-
-
-// 4. take a number eg.1234 ,check for prime number .if prime number exist then print true or false -->
-  let num1=1234
-  inc=false;
-  while(num!=0){
-    fact=0
-    digit=num1%10
-    if(digit>1){
-        for(i=2;i<digit;i++){
-            if(digit%i===0){
-                fact++
-                break;
-            }
-
-        }
-        if(fact==0){
-            inc=true;
-            break;
-        }
-    }
-    num=Math.floor(num/10)
-  }
-  if (inc){
-    console.log(true);
-    
-  }
-  else{
-    console.log(false);
-    
-  }
-
-
-    
+const isArmstrong = num => {
+    const digits = String(num).split('').map(Number);
+    const power = digits.length;
+    const sum = digits.reduce((acc, digit) => acc + Math.pow(digit, power), 0);
+    return sum === num;
+};
+console.log(isArmstrong(153)); 
+console.log(isArmstrong(123)); 
 </script>
-
-
-    
 </body>
 </html>
