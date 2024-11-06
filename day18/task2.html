@@ -7,12 +7,12 @@
 </head>
 <body>
     <script>
+        // Task2:
         num=5
-        mid=Math.ceil(num/2)
         for(i=1; i<=num; i++){
-            s=" "
+            s=""
             for(j=1; j<=num; j++){
-                if(i==mid||j==mid){
+                if(j==num||i==num||i+j==num+1){
                     s=s+"*"+" "
                 }else{
                     s=s+" "+" "
@@ -21,7 +21,6 @@
             console.log(s);
             
         }
-        
 
 
     </script>

@@ -7,20 +7,20 @@
 </head>
 <body>
     <script>
+        // Task3:
         num=5
-        mid=Math.ceil(num/2)
-        for(i=1; i<=num; i++){
-            s=" "
-            for(j=1; j<=num; j++){
-                if(i==mid||j==mid){
+        for(i=num; i>=1; i--){
+            s=""
+            for(j=1; j<=i; j++){
+                if(j==1||i==num||j==i){
                     s=s+"*"+" "
                 }else{
-                    s=s+" "+" "
+                    s=s+""+""
                 }
             }
-            console.log(s);
-            
-        }
+       
+        console.log(s);
+    }
         
 
 
