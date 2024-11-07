@@ -7,32 +7,18 @@
 </head>
 <body>
     <script>
-        // Task5:
-        
-// a b c d e
-//  a b c d
-//   a b c
-//    a b
-//     a
-//    a b
-//   a b c
-//  a b c d
-// a b c d e
-
-        num=5
-        for(i=num; i>=2; i--){
-            code=97
-            s=""
-            for(sp=0; sp<num-i; sp++){
-                s=s+" "
-            }
-            for(j=1; j<=i; j++){
-                s=s+String.fromCharCode(code)+" "
-                code++
-            }
-            console.log(s);
-            }
-            for(i=1; i<=num; i++){
+// 2.print hallow diamond with alphabets
+     //  a
+    //  a  b
+ //    a  b  c
+  //  a  b  c d
+  // a  b  c  d e
+  //  a  b  c  d
+  //   a  b  c
+  //    a  b
+  //      a 
+num=5
+  for(i=1; i<=num; i++){
                 code=97
                 s=""
                 for(sp=0; sp<num-i; sp++){
@@ -45,6 +31,22 @@
                 console.log(s);
                 
             }
+            for(i=num-1; i>=1; i--){
+                code=97
+                s=""
+                for(sp=0; sp<num-i; sp++){
+                    s=s+" "
+                }
+                for(j=1; j<=i; j++){
+                    s=s+String.fromCharCode(code)+" "
+                    code++
+                }
+                console.log(s);
+            }
+
+
+
+
     </script>
     
 </body>
